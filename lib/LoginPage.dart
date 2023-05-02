@@ -24,37 +24,29 @@ class LoginPage extends StatelessWidget {
             style: TextStyle(fontSize: 24.0),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(
-            height: 1.0,
-          ),
-          const TextField(
-            keyboardType: TextInputType.emailAddress,
-            decoration: InputDecoration(
-                labelText: "Email",
-                labelStyle: TextStyle(
-                  fontSize: 14.0,
+          Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 1.0,
                 ),
-                hintStyle: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 10.0,
-                )),
-            style: TextStyle(fontSize: 14.0),
-          ),
-          const SizedBox(
-            height: 1.0,
-          ),
-          const TextField(
-            obscureText: true,
-            decoration: InputDecoration(
-                labelText: "Password",
-                labelStyle: TextStyle(
-                  fontSize: 14.0,
+                const TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    labelStyle: TextStyle(
+                      fontSize: 14.0,
+                    ),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 10.0,
+                    ),
+                  ),
+                  style: TextStyle(fontSize: 14.0),
                 ),
-                hintStyle: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 10.0,
-                )),
-            style: TextStyle(fontSize: 14.0),
+              ],
+            ),
           ),
           const SizedBox(
             height: 1.0,
