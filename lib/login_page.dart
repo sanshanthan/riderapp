@@ -74,6 +74,11 @@ class LoginPage extends StatelessWidget {
             // color: Colors.yellow,
             // textColor: Colors.white,
             onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.yellow, // Background color
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24.0)),
+            ),
             child: const SizedBox(
               height: 50.0,
               child: Center(
