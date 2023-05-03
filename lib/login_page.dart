@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -14,17 +15,29 @@ class LoginPage extends StatelessWidget {
           ),
           const Image(
             image: AssetImage("images/logo.png"),
-            width: 350.0,
-            height: 350.0,
+            width: 250.0,
+            height: 250.0,
             alignment: Alignment.center,
           ),
           const SizedBox(
-            height: 15.0,
+            height: 1.0,
           ),
           const Text(
             "Login as a Rider",
             style: TextStyle(fontSize: 24.0),
             textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 10),
+          TextButton(
+            style: TextButton.styleFrom(
+              textStyle: const TextStyle(fontSize: 10),
+            ),
+            onPressed: () {
+              if (kDebugMode) {
+                print("clicked");
+              }
+            },
+            child: const Text('Do not have an account? Register Here.'),
           ),
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -84,11 +97,23 @@ class LoginPage extends StatelessWidget {
               child: Center(
                 child: Text(
                   "Login",
-                  // style: TextStyle(fontSize: 18.0),
+                  style: TextStyle(fontSize: 18.0, color: Colors.black),
                 ),
               ),
             ),
           ),
+          // const SizedBox(height: 10),
+          // TextButton(
+          //   style: TextButton.styleFrom(
+          //     textStyle: const TextStyle(fontSize: 10),
+          //   ),
+          //   onPressed: () {
+          //     if (kDebugMode) {
+          //       print("clicked");
+          //     }
+          //   },
+          //   child: const Text('Do not have an account? Register Here.'),
+          // ),
         ],
       ),
     );
