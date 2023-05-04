@@ -1,8 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:riderapp/registerationScreen.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
+  static const String idScreen = "login";
 
   @override
   Widget build(BuildContext context) {
@@ -99,9 +101,8 @@ class LoginPage extends StatelessWidget {
                 textStyle: const TextStyle(fontSize: 15),
               ),
               onPressed: () {
-                if (kDebugMode) {
-                  print("clicked");
-                }
+                Navigator.pushNamedAndRemoveUntil(
+                    context, RegisterationScreen.idScreen, (route) => false);
               },
               child: const Text('Do not have an account? Register Here.'),
             ),

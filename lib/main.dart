@@ -9,6 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  static const String idScreen = "mainScreen";
 
   // This widget is the root of your application.
   @override
@@ -18,7 +19,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RegisterationScreen(),
+      initialRoute: LoginPage.idScreen,
+      routes: {
+        RegisterationScreen.idScreen: (context) => const RegisterationScreen(),
+        LoginPage.idScreen: (context) => const LoginPage(),
+        MyApp.idScreen: (context) => const MyApp(),
+      },
     );
   }
 }
