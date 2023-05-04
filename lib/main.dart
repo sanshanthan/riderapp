@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riderapp/registerationScreen.dart';
 
 import 'login_page.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const RegisterationScreen(),
     );
   }
 }
