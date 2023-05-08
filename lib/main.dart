@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: LoginPage.idScreen,
       routes: {
-        RegisterationScreen.idScreen: (context) => const RegisterationScreen(),
+        RegisterationScreen.idScreen: (context) => RegisterationScreen(),
         LoginPage.idScreen: (context) => const LoginPage(),
         MyApp.idScreen: (context) => const MyApp(),
       },
